@@ -1,0 +1,5 @@
+{"level":"error","message":"4/8/2024, 7:01:52 PM - Invalid input for Division: num1=34, num2=","service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 8:46:51 PM - Invalid input for Exponentiation: num1=smit, num2=1","service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 8:54:02 PM - Invalid input for Exponentiation: num1=smit, num2=1","service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 8:54:39 PM - Division by zero is not possible","service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 8:54:40 PM - Division by zero is not possible","service":"ASMD-microservice"}

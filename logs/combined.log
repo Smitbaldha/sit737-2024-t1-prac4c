@@ -1,0 +1,48 @@
+{"level":"info","message":"4/8/2024, 6:46:14 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:46:47 PM - POST /sqrt requested","requestBody":{"num1":"5","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:48:52 PM - POST /sqrt requested","requestBody":{"num1":"5","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:49:00 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:49:06 PM - POST /sqrt requested","requestBody":{"num1":"5","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:51:41 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:51:48 PM - POST /sqrt requested","requestBody":{"num1":"45","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:52:02 PM - POST /exponentiate requested","requestBody":{"num1":"10","num2":"13"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:55:27 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:56:17 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:57:39 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 6:58:34 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:00:03 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:01:00 PM - POST /exponent requested","requestBody":{"num1":"3","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:01:52 PM - POST /divide requested","requestBody":{"num1":"34","num2":""},"service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 7:01:52 PM - Invalid input for Division: num1=34, num2=","service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:02:53 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:03:00 PM - POST /divide requested","requestBody":{"num1":"12","num2":"1"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:03:13 PM - POST /exponent requested","requestBody":{"num1":"10","num2":"2"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:04:17 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:05:58 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:06:12 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:08:10 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:08:14 PM - POST /sqrt requested","requestBody":{"num1":"","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:08:35 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:09:04 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:09:16 PM - POST /sqrt requested","requestBody":{"num1":"","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:09:20 PM - POST /sqrt requested","requestBody":{"num1":"12","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:20:19 PM - POST /modulo requested","requestBody":{"num1":"114","num2":"2"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:20:25 PM - POST /modulo requested","requestBody":{"num1":"114","num2":"3"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 7:20:31 PM - POST /modulo requested","requestBody":{"num1":"114","num2":"4"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:32:52 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:34:17 PM - POST /add requested","requestBody":{"num1":"12","num2":"34"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:35:50 PM - POST /subtract requested","requestBody":{"num1":"12","num2":"34"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:36:43 PM - POST /multiply requested","requestBody":{"num1":"12","num2":"34"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:40:12 PM - POST /exponent requested","requestBody":{"num1":"12","num2":"34"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:40:26 PM - POST /sqrt requested","requestBody":{"num1":"12","num2":""},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:40:36 PM - POST /modulo requested","requestBody":{"num1":"12","num2":"34"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:46:34 PM - GET / requested","requestBody":{},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:46:46 PM - POST /exponent requested","requestBody":{"num1":"0","num2":"1"},"service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:46:51 PM - POST /exponent requested","requestBody":{"num1":"smit","num2":"1"},"service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 8:46:51 PM - Invalid input for Exponentiation: num1=smit, num2=1","service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:54:01 PM - POST /exponent requested","requestBody":{"num1":"smit","num2":"1"},"service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 8:54:02 PM - Invalid input for Exponentiation: num1=smit, num2=1","service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:54:39 PM - POST /modulo requested","requestBody":{"num1":"5677","num2":"0"},"service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 8:54:39 PM - Division by zero is not possible","service":"ASMD-microservice"}
+{"level":"info","message":"4/8/2024, 8:54:40 PM - POST /modulo requested","requestBody":{"num1":"5677","num2":"0"},"service":"ASMD-microservice"}
+{"level":"error","message":"4/8/2024, 8:54:40 PM - Division by zero is not possible","service":"ASMD-microservice"}

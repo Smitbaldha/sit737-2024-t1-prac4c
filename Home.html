@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Advanced Calculator</title>
+</head>
+<body>
+    <h2>Advanced Calculator</h2>
+    <form id="ASMDForm">
+        <label for="num1">Number 1:</label>
+        <input type="text" id="num1" name="num1">
+        <br><br>
+        <label for="num2">Number 2:</label>
+        <input type="text" id="num2" name="num2">
+        <br><br>
+        <select id="operation" onchange="toggleInputs()">
+            <option value="add">Addition</option>
+            <option value="subtract">Subtraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+            <option value="exponent">Exponentiation</option>
+            <option value="sqrt">Square Root</option>
+            <option value="modulo">Modulo</option>
+        </select>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <div id="error-alert" class="alert alert-danger" role="alert" style="display: none;">
+    </div>
+
+
+    <script>
+        function toggleInputs() {
+            var operation = document.getElementById("operation").value;
+            var num1Label = "Number 1:";
+            var num2Label = "Number 2:";
+            
+            switch(operation) {
+                case 'exponent':
+                    num1Label = "Base:";
+                    num2Label = "Exponent:";
+                    break;
+                case 'divide':
+                    num1Label = "Dividend:";
+                    num2Label = "Divisor:";
+                    break;
+                case 'sqrt':
+                    num2Label = ""; // No num2 for square root
+                    break;
+                case 'modulo':
+                    num1Label = "Dividend:";
+                    num2Label = "Divisor:";
+                    break;
+                default:
+                    break;
+            }
+
+            document.getElementById("num1").setAttribute("placeholder", num1Label);
+            document.getElementById("num2").setAttribute("placeholder", num2Label);
+        }
+
+        function calculate() {
+            var operation = document.getElementById("operation").value;
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+
+            if (operation === "sqrt") {
+                num2 = ""; // Empty num2 for operation that only require one number
+            }
+
+            fetch('/' + operation, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ num1: num1, num2: num2 })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.error) {
+                    document.getElementById("result").innerText = "";
+                    document.getElementById("result").style.display = "none";
+                    document.getElementById("error-alert").innerText = "Error: " + data.error;
+                    document.getElementById("error-alert").style.display = "block";
+                } else {
+                    document.getElementById("result").innerText = "Result: " + data.result;
+                    document.getElementById("result").style.display = "block";
+                    document.getElementById("error-alert").style.display = "none";
+                }
+            })
+            .catch(error => {
+                document.getElementById("result").innerText = "";
+                document.getElementById("result").style.display = "none";
+                document.getElementById("error-alert").innerText = "An error occurred. Please try again or check logs for more info";
+                document.getElementById("error-alert").style.display = "block";
+            });
+        }
+
+        // Call toggleInputs initially to set initial input visibility
+        toggleInputs();
+    </script>    
+</body>
+</html>
